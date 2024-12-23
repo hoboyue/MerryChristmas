@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+	<title>Merry Christmas to XXXX</title>
+	<link rel="stylesheet" href="dist/css/app.css">
+
+	<style>
+		.center-btn-container {
+			position: fixed;
+			top: 60%; /* 向下移动 */
+			left: 50%;
+			transform: translate(-50%, -50%);
+			text-align: center;
+		}
+
+		.center-link {
+			font-size: 50px; /* 字体大小更突出 */
+			font-weight: normal;
+			color: white; /* 亮粉色，显眼且可爱 */
+			text-decoration: none; /* 去掉下划线 */
+			font-family: Georgia, serif; /* 使用 Georgia 字体 */
+			text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3); /* 强化文字阴影 */
+			transition: transform 0.3s ease, text-shadow 0.3s ease;
+		}
+
+		.center-link:hover {
+			transform: scale(1.2); /* 悬停时放大效果更显著 */
+			text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5); /* 加强悬停阴影 */
+		}
+	</style>
+</head>
+<body>
+	<section class="loading-mask">
+		<section class="loading">
+			<div class="progress">
+				<div class="progres-bar"><i class="icon-car"></i></div>
+			</div>
+			<p class="loading-text">努力加载中...</p>
+		</section>
+		<a href="javascript:;" class="playBgMusic animate-notifylight" id="j-playBgMusic">进入</a>
+	</section>
+
+	<section class="page out">
+		<section class="content">
+			<section class="bigSnow-panel j-bigSnow animate-bigSnowRotate transition">
+				<i class="img-bigSnow snow1 animate-bigSnow1Change transition"></i>
+				<i class="img-bigSnow snow2 animate-bigSnow2Change transition"></i>
+				<i class="img-bigSnow snow3 animate-bigSnow3Change transition"></i>
+			</section>
+			<div class="banner-panel j-banner opacity0 animated">
+				<span class="textMask mask1 j-textmask1"><i class="transition"></i></span>
+				<span class="textMask mask2 j-textmask2"><i class="transition"></i></span>
+				<span class="textMask mask3 j-textmask3"><i class="transition"></i></span>
+				<i class="img-glove animate-gloveSwing"></i>
+			</div>
+			<i class="img-tree left opacity0 transition tn j-tree-left"></i>
+			<i class="img-tree right opacity0 transition tn j-tree-right"></i>
+			<section class="bag-panel opacity0 animated j-bag">
+				<i class="img-gift gift1 j-gift1 opacity0 animated"></i>
+				<i class="img-gift gift2 j-gift2 opacity0 animated"></i>
+				<i class="img-gift gift3 j-gift3 opacity0 animated"></i>
+			</section>
+			<i class="img-stars opacity0 animated j-stars"></i>
+			<i class="content-bg opacity0 animated j-bottomBg"></i>
+		</section>
+	</section>
+
+	<div class="center-btn-container">
+		<a class="center-link" href="content/index.html">Merry Christmas to 名字!</a>
+	</div>
+
+
+	<audio id="bgmusci" autoplay preload="load" loop="loop"><source src="main.mp3" type="audio/mpeg" /></audio>
+
+	<script src="dist/js/app.js"></script>
+	<script>
+		ISPRO=true;
+	</script>
+</body>
+</html>
